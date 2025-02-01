@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'estilos.css' %}">
+
+
+{% block content %}
+<section class="banner">
+    <div class="content-banner">
+        <p>Productos Tipicos del Huila</p>
+        <h2>100% Artesanal <br />Descubre el encanto de lo Artesanal </h2>
+        <a href="">Comprar ahora</a>
+    </div>
+</section>
+
+<main class="main-content">
+    <section class="container container-features">
+        <div class="card-feature">
+            <i class="fa-brands fa-avianex"></i>
+            <div class="feature-content">
+                <span>Envío gratuito a nivel nacional</span>
+                <p>En pedido superior a $300.000</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-wallet"></i>
+            <div class="feature-content">
+                <span>Contrareembolso</span>
+                <p>100% garantía de devolución de dinero</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-gift"></i>
+            <div class="feature-content">
+                <span>Ofertas especiales</span>
+                <p>Ofrece ofertas por comprar productos</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-headset"></i>
+            <div class="feature-content">
+                <span>Servicio al cliente 12 horas al dia</span>
+                <p>LLámenos 3204500034</p>
+            </div>
+        </div>
+    </section>
+    <section class="container top-categories" id="servicios">
+        <h1 class="heading-1">Mejores Categorias</h1>
+        <div class="container-categories">
+            <div class="card-category category-moca">
+                <span class="titulo-item">Roscas</span>
+                
+            </div>
+            <div class="card-category category-expreso">
+                <span class="titulo-item">Bizcochos</span>
+                
+            </div>
+            <div class="card-category category-capuchino">
+                <span class="titulo-item">Galletas</span>
+            
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="container-top-products">
+        <h1 class="heading-1">Nuestros Productos</h1>
+
+        <div class="container-options">
+            <span class="active">Galeria de fotos</span>
+            
+        </div>
+
+        <section class="contenedor" id="Galeria">
+            <!-- Contenedor de elementos -->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Biscochoz Altamira</span>
+                    <img src="/static/img/1.jpeg" alt="" class="img-item">
+                    <span class="precio-item">$3.000 COP </span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Merenguez Grandes</span>
+                    <img src="/static/img/2.jpeg" alt="" class="img-item">
+                    <span class="precio-item">$3.000 COP</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Galletas de chocolate</span>
+                    <img src="/static/img/3.jpeg" alt="" class="img-item">
+                    <span class="precio-item">$2.000 COP</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Biscochoz Achira</span>
+                    <img src="/static/img/WhatsApp Image 2024-11-29 at 9.07.39 AM (2).jpeg" alt="" class="img-item">
+                    <span class="precio-item">$3.000 COP</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Merenguez Pequeños</span>
+                    <img src="/static/img/5.jpeg" alt="" class="img-item">
+                    <span class="precio-item">$2.000 COP</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Bizcochos Altamira</span>
+                    <img src="/static/img/6.jpeg" alt="" class="img-item">
+                    <span class="precio-item">$3.000 COP</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Galletas Nata</span>
+                    <img src="/static/img/7.jpeg" alt="" class="img-item">
+                    <span class="precio-item">$2.000 COP</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Roscas Tostadas</span>
+                    <img src="/static/img/roscas.jpeg" alt="" class="img-item">
+                    <span class="precio-item">$3.000 cop</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+    
+                <div class="carrito-items">
+                    <!-- 
+                    <div class="carrito-item">
+                        <img src="img/boxengasse.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Box Engasse</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-item-precio">$15.000,00</span>
+                        </div>
+                       <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </span>
+                    </div>
+                    <div class="carrito-item">
+                        <img src="img/skinglam.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Skin Glam</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-item-precio">$18.000,00</span>
+                        </div>
+                       <button class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </button>
+                    </div>
+                     -->
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+            </div>
+        </section>
+            
+    <section class="container blogs" id="Quienes">
+        <h1 class="heading-1">Quienes somos?</h1>
+
+        <div class="container-blogs">
+            <div class="card-blog">
+                <div class="container-img">
+                    
+                    <div class="button-group-blog">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-link"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content-blog">
+                    <h3>Misión</h3>
+                    <p>
+                        "Nuestra misión es deleitar a nuestros clientes con una variedad de biscochería y galletas artesanales, frescas y de alta calidad, mientras proporcionamos un servicio excepcional y una experiencia única en cada interacción. Nos comprometemos a utilizar solo ingredientes naturales y frescos, y a apoyar a los productores locales y sostenibles."
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="card-blog">
+                <div class="container-img">
+                    
+                    <div class="button-group-blog">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <span>it 
+                            <i class="fa-solid fa-link"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-blog">
+                    <h3>Visión</h3>
+                    
+                    <p>
+                        "Ser la biscochería y galletaría más reconocida y querida en la región, conocida por nuestra pasión por la calidad, la innovación y la satisfacción del cliente. Queremos ser el destino preferido para aquellos que buscan un regalo especial, un postre delicioso o simplemente un momento de alegría y satisfacción."
+                    </p>
+                
+                </div>
+            </div>
+            <div class="card-blog">
+                <div class="container-img">
+                    
+                    <div class="button-group-blog">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-link"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Mapanoti -->
+
+<div class="mapanoti">
+<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d580.9004309995385!2d-75.6283818413687!3d2.1955067002888113!3m2!1i1024!2i768!4f13.1!2m1!1zNDEgQ3JhLiA5LMKgR2FyesOzbiwgSHVpbGE!5e1!3m2!1ses!2sco!4v1732913509310!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h1>Ubícanos con  <br> ayuda del mapa</h1>
+</div>
+
+<!-- Video corto -->
+<section class="master">
+    <h1>Conoce en dónde  <br> nos puedes ubicar</h1>
+    <div>
+        <video controls autoplay muted  poster="">
+            <source src="/static/video/WhatsApp Video 2024-12-02 at 6.15.03 AM.mp4">
+        </video>
+    </div>
+</section>
+
+<script src="{% static 'js/app.js' %}"></script>
+
+{% endblock %}
+
